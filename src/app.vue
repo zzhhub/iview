@@ -33,28 +33,5 @@
                 testData: []
             }
         },
-//        mounted () {
-//
-//        },
-//        beforeDestroy () {
-//
-//        },
-//        methods: {
-//
-//        },
-        created () {
-            this.getData();
-        },
-        methods: {
-            getData () {
-                // this是指向当前vue实例，千万不能丢掉，不然会报方法或对象undefined
-                // 调用的接口是豆瓣公开的，可以直接测试调用
-                this.$http.get('/api/v2/book/1220562').then(response => {
-                    this.testData = response.data;
-            }).catch(error => {
-                console.log(error);
-        })
-        }
-        }
     }
 </script>
