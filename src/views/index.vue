@@ -31,6 +31,7 @@
                 <h1>
                     <img src="../images/logo.png">
                 </h1>
+                <h1>{{testData.author[0]}}</h1>
                 <h2>
                     <p>Welcome to your iView app!</p>
                     <Button @click="handleStart">Start iView</Button>
@@ -41,9 +42,13 @@
 </template>
 <script>
     export default {
-
+        data () {
+            return {
+                testData: []
+            }
+        },
         created () {
-        this.getData();
+            this.getData();
         },
         methods: {
             getData () {

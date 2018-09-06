@@ -28,10 +28,6 @@
 </template>
 <script>
     export default {
-        data () {
-            return {
-                testData: []
-            }
-        },
+
     }
 </script>
