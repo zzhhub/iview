@@ -31,7 +31,7 @@
                 <h1>
                     <img src="../images/logo.png">
                 </h1>
-                <h1>{{testData.author[0]}}</h1>
+                <h1 v-for="author in testData.author">{{author}}</h1>
                 <h2>
                     <p>Welcome to your iView app!</p>
                     <Button @click="handleStart">Start iView</Button>

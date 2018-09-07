@@ -1,6 +1,7 @@
 import index from './views/index.vue';
 import grid from './views/grid.vue';
 import button from './views/button.vue';
+import selectOptions from './views/selectOptions.vue';
 import icon from './views/icon';
 import card from './views/card';
 const routers = [
@@ -38,6 +39,13 @@ const routers = [
             title: 'card'
         },
         component: card
-    }
+    },
+    {
+        path: '/selectOptions',
+        meta: {
+            title: 'selectOptions'
+        },
+        component: selectOptions
+    },
 ]
 export default routers;
