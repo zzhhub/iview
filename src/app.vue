@@ -22,6 +22,9 @@
         <div class="list-group">
             <router-link class="router-link-active" to="/">index</router-link>
             <router-link class="router-link-active" to="/grid">grid</router-link>
+            <router-link class="router-link-active" to="/button">button</router-link>
+            <router-link class="router-link-active" to="/icon">icon</router-link>
+            <router-link class="router-link-active" to="/card">card</router-link>
         </div>
         <router-view></router-view>
     </div>
