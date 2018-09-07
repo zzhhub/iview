@@ -1,7 +1,7 @@
 <style scoped>
     .index{
         width: 100%;
-        position: absolute;
+        /*position: absolute;*/
         top: 0;
         bottom: 0;
         left: 0;
@@ -26,6 +26,8 @@
 </style>
 <template>
     <div class="index">
+        <Alert banner type="warning">Notice: notification contents...</Alert>
+        <Alert banner closable type="warning">Notice: notification contents...</Alert>
         <Row type="flex" justify="center" align="middle">
             <Col span="24">
                 <h1>

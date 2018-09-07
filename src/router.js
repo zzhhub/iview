@@ -4,6 +4,7 @@ import button from './views/button.vue';
 import selectOptions from './views/selectOptions.vue';
 import icon from './views/icon';
 import card from './views/card';
+import modal from './views/modal';
 const routers = [
     {
         path: '/',
@@ -46,6 +47,13 @@ const routers = [
             title: 'selectOptions'
         },
         component: selectOptions
+    },
+    {
+        path: '/modal',
+        meta: {
+            title: 'modal'
+        },
+        component: modal
     },
 ]
 export default routers;
