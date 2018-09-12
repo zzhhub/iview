@@ -27,6 +27,9 @@
                     <router-link class="router-link-active" to="/modal">modal</router-link>
                     <router-link class="router-link-active" to="/selectOptions">selectOption</router-link>
                     <router-link class="router-link-active" to="/modal">modal</router-link>
+                    <router-link class="router-link-active" to="/notice">notice</router-link>
+                    <router-link class="router-link-active" to="/drawer">drawer</router-link>
+                    <router-link class="router-link-active" to="/tree">tree</router-link>
                 </Col>
             </Row>
         </div>

@@ -5,6 +5,9 @@ import selectOptions from './views/selectOptions.vue';
 import icon from './views/icon';
 import card from './views/card';
 import modal from './views/modal';
+import notice from './views/notice';
+import drawer from './views/drawer';
+import tree from './views/tree';
 const routers = [
     {
         path: '/',
@@ -54,6 +57,27 @@ const routers = [
             title: 'modal'
         },
         component: modal
+    },
+    {
+        path: '/notice',
+        meta: {
+            title: 'notice'
+        },
+        component: notice
+    },
+    {
+        path: '/drawer',
+        meta: {
+            title: 'drawer'
+        },
+        component: drawer
+    },
+    {
+        path: '/tree',
+        meta: {
+            title: 'tree'
+        },
+        component: tree
     },
 ]
 export default routers;
