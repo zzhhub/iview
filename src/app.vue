@@ -30,6 +30,8 @@
                     <router-link class="router-link-active" to="/notice">notice</router-link>
                     <router-link class="router-link-active" to="/drawer">drawer</router-link>
                     <router-link class="router-link-active" to="/tree">tree</router-link>
+                    <router-link class="router-link-active" to="/time">time</router-link>
+                    <router-link class="router-link-active" to="/childrenA">childrenA</router-link>
                 </Col>
             </Row>
         </div>

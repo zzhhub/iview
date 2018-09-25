@@ -1,29 +1,3 @@
-<style scoped>
-    .index{
-        width: 100%;
-        /*position: absolute;*/
-        top: 0;
-        bottom: 0;
-        left: 0;
-        text-align: center;
-        h1{
-            height: 150px;
-            img{
-                height: 100%;
-            }
-        }
-        h2{
-            color: #666;
-            margin-bottom: 200px;
-            p{
-                margin: 0 0 50px;
-            }
-        }
-        .ivu-row-flex{
-            height: 100%;
-        }
-    }
-</style>
 <template>
     <div class="index">
         <Alert banner type="warning">Notice: notification contents...</Alert>
@@ -40,13 +14,27 @@
                 </h2>
             </Col>
         </Row>
+        <h5>çˆ¶ç»„ä»¶</h5>
+        <input type="text" v-model="role"/>
+        <!-- çˆ¶ç»„ä»¶ç›‘å¬add-result-->
+        <div>{{resultList}}</div>
+        <children-a :role="role" @add-result="getResult">
+            <p slot="header">æˆ‘æ˜¯Header</p>
+            <p slot="footer">æˆ‘æ˜¯footer</p>
+        </children-a>
     </div>
 </template>
 <script>
+    import childrenA from './childrenA.vue';
     export default {
+        components:{
+            childrenA
+        },
         data () {
             return {
-                testData: []
+                testData: [],
+                role:"",
+                resultList:""
             }
         },
         created () {
@@ -54,8 +42,8 @@
         },
         methods: {
             getData () {
-                // thisÊÇÖ¸Ïòµ±Ç°vueÊµÀý£¬Ç§Íò²»ÄÜ¶ªµô£¬²»È»»á±¨·½·¨»ò¶ÔÏóundefined
-                // µ÷ÓÃµÄ½Ó¿ÚÊÇ¶¹°ê¹«¿ªµÄ£¬¿ÉÒÔÖ±½Ó²âÊÔµ÷ÓÃ
+                // thisï¿½ï¿½Ö¸ï¿½ï¿½Ç°vueÊµï¿½ï¿½ï¿½ï¿½Ç§ï¿½ï¿½ï¿½Ü¶ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½È»ï¿½á±¨ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½undefined
+                // ï¿½ï¿½ï¿½ÃµÄ½Ó¿ï¿½ï¿½Ç¶ï¿½ï¿½ê¹«ï¿½ï¿½ï¿½Ä£ï¿½ï¿½ï¿½ï¿½ï¿½Ö±ï¿½Ó²ï¿½ï¿½Ôµï¿½ï¿½ï¿½
                 this.$http.get('/api/v2/book/1220562').then(response => {
                     this.testData = response.data;
                 }).catch(error => {
@@ -67,7 +55,37 @@
                     title: 'Bravo',
                     content: 'Now, enjoy the convenience of iView.'
                 });
+            },
+            getResult(name){
+                this.resultList = name;
             }
         },
     }
 </script>
+<style scoped>
+    .index{
+        border: solid 2px #f0c;
+        width: 100%;
+        /*position: absolute;*/
+        top: 0;
+        bottom: 0;
+        left: 0;
+        text-align: center;
+    h1{
+        height: 150px;
+    img{
+        height: 100%;
+    }
+    }
+    h2{
+        color: #666;
+        margin-bottom: 20px;
+    p{
+        margin: 0 0 50px;
+    }
+    }
+    .ivu-row-flex{
+        height: 100%;
+    }
+    }
+</style>

@@ -8,6 +8,8 @@ import modal from './views/modal';
 import notice from './views/notice';
 import drawer from './views/drawer';
 import tree from './views/tree';
+import time from './views/time';
+import childrenA from './views/childrenA.vue';
 const routers = [
     {
         path: '/',
@@ -78,6 +80,20 @@ const routers = [
             title: 'tree'
         },
         component: tree
+    },
+    {
+        path: '/time',
+        meta: {
+            title: 'time'
+        },
+        component: time
+    },
+    {
+        path: '/childrenA',
+        meta: {
+            title: 'childrenA'
+        },
+        component: childrenA
     },
 ]
 export default routers;

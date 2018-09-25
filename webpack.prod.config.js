@@ -41,20 +41,21 @@ module.exports = merge(webpackBaseConfig, {
             inject: false
         })
     ],
-    //ÉèÖÃ¿çÓò´úÀí
+    //ï¿½ï¿½ï¿½Ã¿ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
     devServer: {
         historyApiFallback: true,
         hot: true,
         inline: true,
+        port: 8090,
         stats: { colors: true },
         proxy: {
-            //Æ¥Åä´úÀíµÄurl
+            //Æ¥ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½url
             '/api': {
-                // Ä¿±ê·þÎñÆ÷µØÖ·
+                // Ä¿ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ö·
                 target: 'https://api.douban.com',
-                //Â·¾¶ÖØÐ´
+                //Â·ï¿½ï¿½ï¿½ï¿½Ð´
                 pathRewrite: {'^/api' : '/'},
-                //¿çÓò
+                //ï¿½ï¿½ï¿½ï¿½
                 changeOrigin: true
             }
         }
