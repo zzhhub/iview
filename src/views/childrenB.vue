@@ -1,7 +1,7 @@
 <template>
-    <div class="childrenA">
+    <div class="childrenB">
         <h1>
-            子组件A
+            子组件B
         </h1>
         <div>role传值：{{role}}</div>
         <input type="text" placeholder="请输入..." v-model="name"/>
@@ -34,7 +34,7 @@
     }
 </script>
 <style scoped>
-    .childrenA{
-        border: solid 2px #DC0;
+    .childrenB{
+        border: solid 2px #0fc;
     }
 </style>

@@ -9,7 +9,8 @@ import notice from './views/notice';
 import drawer from './views/drawer';
 import tree from './views/tree';
 import time from './views/time';
-import childrenA from './views/childrenA.vue';
+import childrenA from './views/childrenA';
+import parent from './views/parent';
 const routers = [
     {
         path: '/',
@@ -94,6 +95,13 @@ const routers = [
             title: 'childrenA'
         },
         component: childrenA
+    },
+    {
+        path: '/parent',
+        meta: {
+            title: 'parent'
+        },
+        component: parent
     },
 ]
 export default routers;
