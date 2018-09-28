@@ -72,8 +72,7 @@
 
 <script>
     export default {
-        data ()
-        {
+        data (){
             return {
                 modal1: false,
                 modal2: false,

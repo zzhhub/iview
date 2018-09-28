@@ -7,6 +7,7 @@ import App from './app.vue';
 import axios from 'axios';
 import 'iview/dist/styles/iview.css';
 import '../my-theme/index.less';
+import './styles/common.css';
 
 Vue.use(VueRouter);
 Vue.use(iView);
