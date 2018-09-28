@@ -2,14 +2,14 @@
     <div>
         <div class="app-header">
             <div class="app-header-inner">
-                <img src="" alt=""/>
+                <img src="../images/logo.png" width="60" alt=""/>
                 <div class="head-nav">
                     <ul class="nav-list">
-                        <li>登录</li>
+                        <li><a href="">登录</a></li>
                         <li class="nav-pipe">|</li>
-                        <li>注册</li>
+                        <li><a href="">注册</a></li>
                         <li class="nav-pipe">|</li>
-                        <li>关于</li>
+                        <li><a href="">关于</a></li>
                     </ul>
                 </div>
             </div>
@@ -34,5 +34,33 @@
     }
 </script>
 <style scoped>
+    .app-header-inner{
+        width: 80%;
+        margin: 0 auto;
+    }
+    .app-header{
+        background: #162556;
+        height: 60px;
+    }
+    .head-nav{
+        margin-top: 20px;
+        float: right;
+    }
+    .nav-list>li{
+        color: #fff;
+        font-size: 14px;
+        float: left;
+        margin:0 10px;
+    }
+    .nav-list>li>a{
+        color: #fff;
+        font-size: 14px;
+    }
 
+    .app-footer{
+        background: #162556;
+        color: #fff;
+        padding: 20px 0;
+        text-align: center;
+    }
 </style>
