@@ -11,6 +11,7 @@ import tree from './views/tree';
 import time from './views/time';
 import childrenA from './views/childrenA';
 import parent from './views/parent';
+import websitedemo from './views/websitedemo';
 const routers = [
     {
         path: '/',
@@ -97,11 +98,25 @@ const routers = [
         component: childrenA
     },
     {
+        path: '/websitedemo',
+        meta: {
+            title: 'websitedemo'
+        },
+        component: websitedemo
+    },
+    {
         path: '/parent',
         meta: {
             title: 'parent'
         },
         component: parent
+    },
+    {
+        path: '**',
+        meta: {
+            title: 'index'
+        },
+        redirect: '/index'
     },
 ]
 export default routers;

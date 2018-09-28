@@ -33,6 +33,7 @@
                     <router-link class="router-link-active" to="/time">time</router-link>
                     <router-link class="router-link-active" to="/childrenA">childrenA</router-link>
                     <router-link class="router-link-active" to="/parent">parent</router-link>
+                    <router-link class="router-link-active" to="/websitedemo">websitedemo</router-link>
                 </Col>
             </Row>
         </div>
