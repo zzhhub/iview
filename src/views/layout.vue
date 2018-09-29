@@ -5,7 +5,7 @@
                 <img src="../images/logo.png" width="60" alt=""/>
                 <div class="head-nav">
                     <ul class="nav-list">
-                        <li><a href="">登录</a></li>
+                        <li><router-link to="/" tag="span">登录</router-link></li>
                         <li class="nav-pipe">|</li>
                         <li><a href="">注册</a></li>
                         <li class="nav-pipe">|</li>
@@ -14,7 +14,11 @@
                 </div>
             </div>
         </div>
-        <div class="app-content">app-content</div>
+        <div class="app-content">
+            <keep-alive>
+                <router-view></router-view>
+            </keep-alive>
+        </div>
         <div class="app-footer">
             <div>© 2018 xx科技有限公司</div>
         </div>

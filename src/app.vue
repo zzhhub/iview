@@ -16,27 +16,28 @@
 </style>
 <template>
     <div>
-        <div class="list-group">
-            <Row>
-                <Col span="24">
-                    <router-link class="router-link-active" to="/">index</router-link>
-                    <router-link class="router-link-active" to="/grid">grid</router-link>
-                    <router-link class="router-link-active" to="/button">button</router-link>
-                    <router-link class="router-link-active" to="/icon">icon</router-link>
-                    <router-link class="router-link-active" to="/card">card</router-link>
-                    <router-link class="router-link-active" to="/modal">modal</router-link>
-                    <router-link class="router-link-active" to="/selectOptions">selectOption</router-link>
-                    <router-link class="router-link-active" to="/modal">modal</router-link>
-                    <router-link class="router-link-active" to="/notice">notice</router-link>
-                    <router-link class="router-link-active" to="/drawer">drawer</router-link>
-                    <router-link class="router-link-active" to="/tree">tree</router-link>
-                    <router-link class="router-link-active" to="/time">time</router-link>
-                    <router-link class="router-link-active" to="/childrenA">childrenA</router-link>
-                    <router-link class="router-link-active" to="/parent">parent</router-link>
-                    <router-link class="router-link-active" to="/websitedemo">websitedemo</router-link>
-                </Col>
-            </Row>
-        </div>
+         <div class="list-group">
+              <Row>
+                  <Col span="24">
+                     <router-link class="router-link-active" to="/">index</router-link>
+                     <router-link class="router-link-active" to="/grid">grid</router-link>
+                     <router-link class="router-link-active" to="/button">button</router-link>
+                     <router-link class="router-link-active" to="/icon">icon</router-link>
+                     <router-link class="router-link-active" to="/card">card</router-link>
+                     <router-link class="router-link-active" to="/modal">modal</router-link>
+                     <router-link class="router-link-active" to="/selectOptions">selectOption</router-link>
+                     <router-link class="router-link-active" to="/modal">modal</router-link>
+                     <router-link class="router-link-active" to="/notice">notice</router-link>
+                     <router-link class="router-link-active" to="/drawer">drawer</router-link>
+                     <router-link class="router-link-active" to="/tree">tree</router-link>
+                     <router-link class="router-link-active" to="/time">time</router-link>
+                     <router-link class="router-link-active" to="/childrenA">childrenA</router-link>
+                     <router-link class="router-link-active" to="/parent">parent</router-link>
+                     <router-link class="router-link-active" to="/websitedemo">websitedemo</router-link>
+                 </Col>
+             </Row>
+         </div>
+
         <router-view></router-view>
     </div>
 </template>
